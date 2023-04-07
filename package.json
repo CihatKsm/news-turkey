@@ -1,6 +1,6 @@
 {
   "name": "news-turkey",
-  "version": "0.0.7",
+  "version": "0.0.1",
   "description": "This module was made to list the news in Turkey.",
   "main": "news.js",
   "scripts": {
