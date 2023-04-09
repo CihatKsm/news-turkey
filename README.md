@@ -45,7 +45,7 @@ setTimeout(async () => {
 #### Bilgi
 
 <small>
-Bu modülde [Haber.com](https://haber.com/son-dakika/) web sitesindeki haberler yer almaktadır.
+Bu modülde haber.com/son-dakika web sitesindeki haberler yer almaktadır.
 <br>
 Herhangi bir sorun teşkil ediyorsa, problem oluşturuyorsa ya da oluşturduysa önce tarafıma bilgi verilmesi rica olunur.
 </small>
