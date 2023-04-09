@@ -41,6 +41,6 @@ module.exports = async (data) => {
         if (i - 1 > 0) await getNews(i - 1);
     }
 
-    const news = newsList.sort((a, b) => b.timespan - a.timespan).slice(0, data.count);
+    const news = newsList.sort((a, b) => b.timespan - a.timespan).slice(0, data.count).map(({ timespan, ...rest }) => rest);
     return news
 };

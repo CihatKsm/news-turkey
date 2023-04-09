@@ -22,7 +22,6 @@ setTimeout(async () => {
 ```json
 [
     {
-        "timespan": 1680968460000,
         "category": "Teknoloji",
         "date": "08/04/2023 18:41",
         "text": "İnstagram Mavi Tik Satışları Zirvede: Rekor Gelir Açıklandı",
