@@ -20,7 +20,7 @@ module.exports = async (data) => {
             const text = datas.find('.kanews-post-headline.truncate.truncate-3').text().trim();
             const _date = datas.find('.mt-1').text().trim();
             const category = datas.find('.kanews-category').text().trim();
-            const image = datas.find('.kanews-post-thumb img').attr('data-src')
+            const image = datas.find('.kanews-post-thumb img').attr('data-lazy-src')
             const link = datas.find('a').attr('href');
     
             const date = (_date.split(' - ')[0] + ' ' + _date.split(' - ')[2].split(':').map(m => m.length === 1 ? '0' + m : m).join(':'))
