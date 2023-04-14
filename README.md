@@ -12,7 +12,7 @@ const date = () => new Date()
 console.log(date(), 'System opened!')
 
 setTimeout(async () => {
-    //count seçeneği haber sayısını belirler, kullanılmaz ise 20 haber gönderilir.
+    //count parametresi ile kaç haberin çekileceğini belirleyebilirsiniz.
     const information = await news({ count: 5 })
     console.log(information)
 }, 2000);
