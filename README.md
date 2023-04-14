@@ -23,10 +23,15 @@ setTimeout(async () => {
 [
     {
         "category": "Teknoloji",
-        "date": "08/04/2023 18:41",
-        "text": "İnstagram Mavi Tik Satışları Zirvede: Rekor Gelir Açıklandı",
-        "image": "https://cdn.haber.com/wp-content/uploads/2022/09/instagramdan-hikaye-videolar-artik-parcalara-bolunmeyecek-40663.jpg",
-        "link": "https://www.haber.com/instagram-mavi-tik-satislari-zirvede-rekor-gelir-aciklandi-694876/"
+        "date": "01/01/2023 12:34",
+        "text": "...",
+        "image": "...jpg",
+        "link": "https://www.haber.com/.../",
+        "details": "...",
+        "sharer": {
+            "name": "...",
+            "image": "...jpg"
+        }
     },
     {...},
     {...},
