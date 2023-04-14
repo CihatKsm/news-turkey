@@ -13,7 +13,7 @@ console.log(date(), 'System opened!')
 
 setTimeout(async () => {
     //count parametresi ile kaç haberin çekileceğini belirleyebilirsiniz.
-    const information = await news({ count: 5 })
+    const information = await news({ count: 3 })
     console.log(information)
 }, 2000);
 ```
@@ -33,8 +33,6 @@ setTimeout(async () => {
             "image": "...jpg"
         }
     },
-    {...},
-    {...},
     {...},
     {...}
 ]

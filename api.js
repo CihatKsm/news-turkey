@@ -20,7 +20,7 @@ module.exports = async (data) => {
             const text = datas.find('.kanews-post-headline.truncate.truncate-3').text().trim();
             const _date = datas.find('.mt-1').text().trim();
             const category = datas.find('.kanews-category').text().trim();
-            const image = datas.find('.kanews-post-thumb img').attr('data-lazy-src')
+            const image = datas.find('.kanews-post-thumb img').attr('data-src') || null;
             const link = datas.find('a').attr('href');
 
             const date = (_date.split(' - ')[0] + ' ' + _date.split(' - ')[2].split(':').map(m => m.length === 1 ? '0' + m : m).join(':'))
@@ -59,6 +59,6 @@ async function getNew(link) {
             .split('\n').filter(f => !f?.includes('<img')).join('\n')
     ).filter(f => f.trim().length > 0).map(m => m.toUpperCase() == m ? `\n${m}` : m).join('\n');
     const name = $('.kanews-post-author-name.author.vcard')?.text() || null;
-    const image = $('.author-avatar.circle-animation img')?.attr('data-lazy-src')?.replace('-48x48','') || null;
+    const image = $('.author-avatar.circle-animation img')?.attr('data-src')?.replace('-48x48','') || null;
     return { text, sharer: { name, image } };
 }

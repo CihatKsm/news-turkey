@@ -4,7 +4,7 @@ const date = () => new Date()
 console.log(date(), 'System opened!')
 
 news({ count: 5 }).then(information => {
-    console.log(information[4])
+    console.log(information[0])
 })
 
 /*\--------------------------------------------------------/*\
