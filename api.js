@@ -58,7 +58,7 @@ async function getNew(link) {
             .reduce((acc, f) => acc.replaceAll(f, ''), m)
             .split('\n').filter(f => !f?.includes('<img')).join('\n')
     ).filter(f => f.trim().length > 0).map(m => m.toUpperCase() == m ? `\n${m}` : m).join('\n');
-    const name = $('.kanews-post-author-name.author.vcard').text();
-    const image = $('.author-avatar.circle-animation img').attr('data-lazy-src').replace('-48x48','')
+    const name = $('.kanews-post-author-name.author.vcard')?.text() || null;
+    const image = $('.author-avatar.circle-animation img')?.attr('data-lazy-src')?.replace('-48x48','') || null;
     return { text, sharer: { name, image } };
 }
